@@ -12,6 +12,11 @@
 <header>
     <h>Spel-sessie Wingspan</h>
     <img src="./images/1.jpeg" alt="wingspan" />
+</head>
+<body>
+<header>
+    <h>Spel-sessie Wingspan</h>
+    <img src="./images/1.jpeg" alt="wingspan" />
 </header>
 
 <form action="./verwerk.html" method="GET">
@@ -22,66 +27,51 @@
         </section>
 
         <section class="form-row1">
-            <label for="start">Start:</label>
-            <input type="number" id="number" name="start" min="0" max="23" required="">
-            <label for="time">Tijdsduur:</label>
-            <input type="text" name="time" id="Tijdsduur" required />
+            <div class="element1">
+                <label for="start">Start:</label>
+                <input type="number" name="start">
+            </div>
+
+            <div class="element2">
+                <label for="time">Tijdsduur:</label>
+                <input type="text" name="time">
+            </div>
+        </section>
+
         </section>
 
 
-        <section class="form-lijn">
-            <label for="email">E-mailadres</label>
+        <section class="form-row">
+            <label for="email">E-mail</label>
             <input type="email" id="email" name="e-mail" placeholder="bv. samson@gert.com" required="">
         </section>
 
-        <section class="form-lijn">
+        <section class="form-row">
             <label for="complexiteit">Complexiteit:</label>
-            <input
-                    type="range"
-                    min="1"
-                    max="10"
-                    name="complexiteit"
-                    id="complexiteit"
-            />
+            <input type="range" min="1" max="10" name="complexiteit" id="complexiteit" />
         </section>
 
-        <section class="form-lijn">
+        <section class="form-row">
             <label for="geluk">Geluk:</label>
             <input type="range" min="1" max="10" name="geluk" id="geluk" />
         </section>
 
-        <section class="form-lijn">
+        <section class="form-row">
             <label for="strategie">Strategie:</label>
-            <input
-                    type="range"
-                    min="1"
-                    max="10"
-                    name="strategie"
-                    id="strategie"
-            />
+            <input type="range" min="1" max="10" name="strategie" id="strategie" />
         </section>
 
-        <section class="form-lijn">
+        <section class="form-block">
             <label for="Beschrijving">Beschrijving:</label>
             <textarea name="beschrijving" id="beschrijving" rows="7"></textarea>
         </section>
 
-        <section class="form-lijn">
-            <label for="sterren">Aantal Sterren:</label>
-            <input type="radio" name="sterren" id="ster1" value="1" />&star;
-            <input type="radio" name="sterren" id="ster2" value="2" />&star;&star;
-            <input
-                    type="radio"
-                    name="sterren"
-                    id="ster3"
-                    value="3"
-            />&star;&star;&star;
-            <input
-                    type="radio"
-                    name="sterren"
-                    id="ster4"
-                    value="4"
-            />&star;&star;&star;&star;
+        <section class="form-row-star">
+            <label for="star">Aantal Sterren:</label>
+            <input type="radio" name="star" id="star1" value="1" />&star;
+            <input type="radio" name="star" id="star2" value="2" />&star;&star;
+            <input type="radio" name="star" id="star3" value="3" />&star;&star;&star;
+            <input type="radio" name="star" id="star4" value="4" />&star;&star;&star;&star;
         </section>
 
         <button>Bewaar</button>
@@ -89,4 +79,3 @@
 </form>
 </body>
 </html>
-
